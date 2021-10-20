@@ -1,0 +1,30 @@
+.container{
+    border: 1px solid white;
+    padding: 1rem;
+
+    display:flex;
+    justify-content: space-between;
+
+    article{
+        display:flex;
+        gap: 0.5rem;
+    }
+
+
+    article p {
+        font-size: 0.8rem;
+        max-width: 15ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+
+
+}
+
+
+.agaum{
+    text-align: center;
+}

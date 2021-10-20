@@ -1,0 +1,12 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    div {
+        article{
+            padding: 0.7rem 0;
+        }
+    }
+}

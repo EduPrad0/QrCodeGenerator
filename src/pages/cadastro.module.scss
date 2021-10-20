@@ -1,0 +1,63 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.sectionContent{
+
+
+    border-radius: 0.25rem;
+    margin-top: 1.0rem;
+
+    padding: 3rem;
+    border: 1px solid white;
+    
+    background-color: white;
+    color: black;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem  2rem;
+    }
+
+    
+
+    input{
+        border-radius: 0.3rem;
+    }
+    
+    textarea{
+        margin-bottom: 1rem;
+    }
+
+   
+    
+    button{
+        
+        background: rgb(44, 44, 168);
+        color: #FFFFFF;
+        margin: auto;
+    }
+
+    canvas{
+        width: 256px!important;
+        height: 256px!important;
+       padding: 1rem;
+       margin-left: 1rem;
+    }
+    
+}
+
+.contImg{
+   
+    display: flex;
+   flex-direction:column ;
+
+   input{
+       background: green;
+   }
+}

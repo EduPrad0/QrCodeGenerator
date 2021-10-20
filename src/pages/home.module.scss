@@ -1,0 +1,63 @@
+.mainContent{
+    background: url(/bkAdmin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    > div{
+        margin-top: 8rem;
+    }
+
+}
+
+
+.formContainer{
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0, 0.9);
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    input{
+        margin-top: 1rem;
+        width: 100%;
+        padding: 0 1.5rem;
+        height: 3rem;
+        border-radius: 0.25rem;
+
+        border: 1px solid #d7d7d7;
+        background: #e7e9ee;
+
+        font-weight: 400;
+        font-size: 1rem;
+
+
+        &::placeholder{
+            color: var(--text-body);
+
+        }
+
+        & + input{
+            margin: 1rem auto;
+        }
+    }
+
+   
+        button{
+            background: #F72700;
+            color: #FFFFFF;
+            margin: auto;
+        }
+    
+}
+
