@@ -14,7 +14,7 @@ function formatDate(date) {
 const prisma = new PrismaClient();
 
 export default async function Controller(req:NextApiRequest , res:NextApiResponse ) {
-   if(req.method === 'POST'){
+   
     const data = req.body;
     const timeNow = formatDate(new Date())
     try {
@@ -36,19 +36,5 @@ export default async function Controller(req:NextApiRequest , res:NextApiRespons
       res.status(403).json({ err: "Error occured while connecting to server." });
     }
 
-
-
-
-   }else if(req.method === 'GET'){
-     try{
-        const {id} = req.query
-        return res.status(200).json(id);
-
-
-     } catch (err) {
-       console.log(err);
-       res.status(403).json({ err: "Error occured while connecting to server." });
-     }
-   }
 
 };
