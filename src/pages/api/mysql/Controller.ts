@@ -23,7 +23,6 @@ export default async function Controller(req:NextApiRequest , res:NextApiRespons
           name: data.name,
           nameProduct: data.nameProduct,
           description: data.description,
-          fileImg: data.fileImg,
           createdAt: `${timeNow}`
         } 
       })

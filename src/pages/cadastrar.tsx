@@ -21,7 +21,7 @@ export default function cadastrar(){
     let nameResponse;
 
     function GeraQRCode(idGerado: gerarQrProps){
-        var conteudo = `https://qr-code-generator-six.vercel.app/item/${idGerado}`
+        var conteudo = `https://qrcodeapp-edu-card.herokuapp.com//item/${idGerado}`
         setCode(conteudo);
       }
 
