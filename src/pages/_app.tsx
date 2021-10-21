@@ -1,8 +1,13 @@
+import { Navbar } from '../components/Navbar';
 import '../styles/global.scss';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }, {params}) {
+  
   return (
+    <>
+    < Navbar />
     <Component {...pageProps} />
+    </>
   )
 }
 

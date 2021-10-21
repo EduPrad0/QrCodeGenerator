@@ -19,13 +19,13 @@ export default async function Controller(req:NextApiRequest , res:NextApiRespons
     const timeNow = formatDate(new Date())
     try {
       const result = await prisma.products.create({
-          data:{
-            name: data.name,
-            nameProduct: data.nameProduct,
-            description: data.description,
-            fileImg: data.fileImg,
-            createdAt: `${timeNow}`
-          }
+        data:{
+          name: data.name,
+          nameProduct: data.nameProduct,
+          description: data.description,
+          fileImg: data.fileImg,
+          createdAt: `${timeNow}`
+        } 
       })
 
       return res.status(200).json(result);

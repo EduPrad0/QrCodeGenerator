@@ -1,3 +1,4 @@
+import router from 'next/router'
 import styles from './styles.module.scss'
 
 // interface ProductProps {
@@ -58,7 +59,7 @@ export function CardProduct(table){
                 </article>
     
                 <article>
-                    <button>Ver mais</button>
+                    <button onClick={() => router.push(`/item/${element.id}`)}>Ver mais</button>
                 </article>
                 
                 

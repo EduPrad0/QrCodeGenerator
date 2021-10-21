@@ -14,6 +14,7 @@ function Produtos(table: InfProductProps){
 
    return (
         <>
+            
             <main className={styles.Container}>
                 <div>
                     <img src="/defaultImg.png" alt="" />

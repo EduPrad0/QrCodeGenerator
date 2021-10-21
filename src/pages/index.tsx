@@ -27,6 +27,7 @@ export default function Home() {
   }
 
   return (
+    <div className={styles.zi}>
     <main className={styles.mainContent}>
       <div>
         <h1>Bem-Vindo a essa aplicação maravilhosa</h1>
@@ -63,5 +64,6 @@ export default function Home() {
     
     </form>
     </main>
+    </div>
   )
 }

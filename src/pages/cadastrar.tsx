@@ -6,6 +6,7 @@ import axios from "axios";
 import { Button } from "../components/Button";
 
 import styles from "./cadastro.module.scss"
+import { Navbar } from "../components/Navbar";
 
 interface gerarQrProps{
     idGerado: number;
@@ -20,7 +21,7 @@ export default function cadastrar(){
     let nameResponse;
 
     function GeraQRCode(idGerado: gerarQrProps){
-        var conteudo = `http://localhost:3000/item/${idGerado}`
+        var conteudo = `https://qr-code-generator-six.vercel.app/item/${idGerado}`
         setCode(conteudo);
       }
 
@@ -61,6 +62,7 @@ export default function cadastrar(){
 
 
     return cad ? (
+        <>
         <main className={styles.mainContainer}>
             <div>
                 <h1>Cadastre seu produto com o Generator3000</h1>
@@ -107,7 +109,10 @@ export default function cadastrar(){
                 </form>
             </section>
         </main>
+        </>
     ) : (
+        <>
+        <Navbar />
         <main className={styles.mainContainer}>
             <section className={styles.sectionContent}>
                 <div>
@@ -125,5 +130,6 @@ export default function cadastrar(){
                 </span>
             </section>
         </main>
+        </>
     );
 }
