@@ -40,7 +40,7 @@ export default function cadastrar(){
 
 
         
-        await axios.post('/api/mysql/Controller',{
+        await axios.post('https://qr-code-generator-six.vercel.app/api/mysql/Controller',{
             fileImg,
             name,
             nameProduct,
