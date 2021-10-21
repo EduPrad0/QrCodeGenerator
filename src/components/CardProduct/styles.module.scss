@@ -11,18 +11,39 @@
     }
 
 
-    article p {
-        font-size: 0.8rem;
-        max-width: 15ch;
+
+
+
+}
+
+
+.tableStyle{
+    
+    p {
+        font-size: 1rem;
+        max-width: 25ch;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
+    width: 100%;
+    
+    th, td{
+        border: 1px solid rgb(171, 255, 103);
+        padding: 0;
+    }
 
-
+    tr{
+       
+        
+        text-align: center;
+    }
+    
 
 }
+
+
 
 
 .agaum{
