@@ -21,6 +21,7 @@ import styles from './styles.module.scss'
 export function CardProduct(table){
 
     const products = table.table
+    products.reverse()
     
 
     return(

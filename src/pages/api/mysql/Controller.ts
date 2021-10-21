@@ -8,15 +8,13 @@ function formatDate(date) {
     : "--/--/---- 00:00:00";
 }
 
-
-
-
 const prisma = new PrismaClient();
 
 export default async function Controller(req:NextApiRequest , res:NextApiResponse ) {
    
     const data = req.body;
     const timeNow = formatDate(new Date())
+   
     try {
       const result = await prisma.products.create({
         data:{
