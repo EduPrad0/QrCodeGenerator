@@ -6,7 +6,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 
 function formatDate(date) {
   return date
-    ? format(new Date(date) , "dd/MM/yyyy HH:mm:ss", {
+    ? format(date , "dd/MM/yyyy HH:mm:ss", {
       locale: ptBR
     })
     : "--/--/---- 00:00:00";

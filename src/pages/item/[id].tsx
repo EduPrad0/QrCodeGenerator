@@ -22,7 +22,7 @@ function Produtos(table: InfProductProps){
                 <div>
                     <article>
                         <h1>Nome do Produto : </h1>
-                        <h4>{table.name}</h4>
+                        <h4>{table.nameProduct}</h4>
                     </article>
 
                     <article>
