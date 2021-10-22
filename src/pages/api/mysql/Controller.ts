@@ -1,10 +1,14 @@
 import { PrismaClient } from '.prisma/client'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { format } from "date-fns";
+import ptBR from 'date-fns/locale/pt-BR';
+
 
 function formatDate(date) {
   return date
-    ? format(new Date(date), "dd/MM/yyyy HH:mm:ss")
+    ? format(new Date(date) , "dd/MM/yyyy HH:mm:ss", {
+      locale: ptBR
+    })
     : "--/--/---- 00:00:00";
 }
 
