@@ -13,11 +13,11 @@ export default function Home() {
     
     event.preventDefault();
 
-    if(login.trim() !== "edugatinho"){
-      return alert("Eae carinha, aparentemente vc errou kkkkkk, aperta f12 e vê ai")
+    if(login.trim() !== "admin"){
+      return alert("usuário inválido");
     }
     if(pass.trim() !== "123"){
-      return alert("Me ajuda ai meu fiii, a senha é mó fácil")
+      return alert("Senha incorreta")
     }
 
 
@@ -30,15 +30,15 @@ export default function Home() {
     <div className={styles.zi}>
     <main className={styles.mainContent}>
       <div>
-        <h1>Bem-Vindo a essa aplicação maravilhosa</h1>
-        <h3>Logicamente criada por mim, Eduardo Prado</h3>
+        <h1>Bem-Vindo ao gerenciador de produtos</h1>
+        <h3>By Eduardo</h3>
       </div>
 
     <form 
       className={styles.formContainer}
       onSubmit={handleAuth}
     >
-      <h2>Faz o login ai meu chapa, vamos ver se você tem o acesso mesmo</h2>
+      <h2>Login</h2>
 
 
       {/* <label htmlFor="texto">Login</label> */}

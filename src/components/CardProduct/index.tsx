@@ -36,6 +36,7 @@ export function CardProduct(table) {
                         <th>Nome do Autor</th>
                         <th>ID</th>
                         <th>Data</th>
+                        <th></th>
                     </tr>
                     
                 {

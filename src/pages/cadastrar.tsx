@@ -63,14 +63,17 @@ export default function cadastrar(){
 
     return cad ? (
         <>
+         < Navbar />
         <main className={styles.mainContainer}>
             <div>
-                <h1>Cadastre seu produto com o Generator3000</h1>
-
+                <h1>ProdutosCode</h1>
+                <img src="/code.png" alt="" />
             </div>
 
             <section className={styles.sectionContent}>
                 <form onSubmit={handleSubmitCad}>
+                    <p>Cadastre seu produto</p>
+
                     <div className={styles.contImg}>
                         <label htmlFor="img">Clique aqui para anexar uma img</label>
                         <input 
@@ -82,15 +85,16 @@ export default function cadastrar(){
                         
                     </div>
 
-                    <label htmlFor="name">Seu nome: </label>
+                  
                     <input type="text" id="name"
+                        placeholder="Nome"
                         value={name}
                         onChange={event => setName(event.target.value)}
                     />
 
 
-                    <label htmlFor="nameProduct">Nome do Produto: </label>
                     <input type="text" id="nameProduct"
+                        placeholder="Nome do produto"
                         value={nameProduct}
                         onChange={event => setNameProduct(event.target.value)}
                     />
@@ -113,14 +117,13 @@ export default function cadastrar(){
     ) : (
         <>
         <Navbar />
-        <main className={styles.mainContainer}>
-            <section className={styles.sectionContent}>
+        <main className={styles.content}>
+            <section >
                 <div>
                 <h3>Este é o QRcode do produto : {nameResponse}</h3>
                 </div>
 
                 <p>Clique na imagem e salve-a, e a imprima</p>
-                <p>Infelizmente perdi 3 hrs e dps eu melhoro</p>
 
                 <QRCode value={code} />
 

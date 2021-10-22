@@ -10,7 +10,8 @@ export default class MyDocument extends Document{
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet"/>
-            <title>Generator3000</title>
+            <title>ProdutosCode</title>
+            <link rel="shortcut icon" href="Logocode.jpeg" type="image/jpeg" />
             </Head>
             <body>
                 <Main/>
