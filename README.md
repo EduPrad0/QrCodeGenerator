@@ -1,4 +1,4 @@
-#QRCODE Generator
+# QRCODE Generator
 This application is made in nextJs, its objective is the registration and management of products, and the product's differential is that for each product a qrcode is available where access is free and forever
 
 
