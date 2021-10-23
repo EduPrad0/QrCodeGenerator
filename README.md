@@ -1,3 +1,16 @@
+#QRCODE Generator
+This application is made in nextJs, its objective is the registration and management of products, and the product's differential is that for each product a qrcode is available where access is free and forever
+
+
+The product is in the testing phase, the link
+1. https://qrcodeapp-edu-card.herokuapp.com/
+2. login: admin
+3. password: 123
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
