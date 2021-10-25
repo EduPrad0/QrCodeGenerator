@@ -1,44 +1,41 @@
 .container{
-    border: 1px solid white;
-    padding: 1rem;
-
-    display:flex;
-    justify-content: space-between;
-
-    article{
-        display:flex;
-        gap: 0.5rem;
-    }
-
-
-
-
-
+    background-color: white;
+    color: black;
 }
 
 
 .tableStyle{
+        border-collapse: collapse;
+        width: 100%;
     
-    p {
-        font-size: 1rem;
-        max-width: 25ch;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+    th, td {
+        text-align: left;
+        padding: 8px;
     }
-
-    width: 100%;
     
-    th, td{
-        border: 1px solid rgb(171, 255, 103);
-        padding: 0;
-    }
+    tr:nth-child(even){background-color: #f2f2f2}
 
-    tr{
+
+    // p {
+    //     font-size: 1rem;
+    //     max-width: 25ch;
+    //     overflow: hidden;
+    //     text-overflow: ellipsis;
+    //     white-space: nowrap;
+    // }
+
+    // width: 100%;
+    
+    // th, td{
+    //     border: 1px solid rgb(171, 255, 103);
+    //     padding: 0;
+    // }
+
+    // tr{
        
         
-        text-align: center;
-    }
+    //     text-align: center;
+    // }
     
 
 }

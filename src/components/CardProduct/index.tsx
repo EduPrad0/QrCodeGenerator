@@ -1,22 +1,6 @@
 import router from 'next/router'
 import styles from './styles.module.scss'
 
-// interface table {
-    
-//     id: number;
-//     name: string;
-//     nameProduct: string;
-//     fileImg?: string;
-//     createdAt?: string;
-//     description?: string;
-    
-// }
-
-// interface tableProsp {
-//     table: [table];
-// }
-
-
 
 export function CardProduct(table) {
 
@@ -25,7 +9,7 @@ export function CardProduct(table) {
 
 
     return (
-        <>
+        <section className={styles.container}>
             <h1 className={styles.agaum}>Produtos cadastrados e gerado o QrCode</h1>
 
             <div>
@@ -64,7 +48,7 @@ export function CardProduct(table) {
             
                 </table>
         </div>
-        </>
+        </section>
 
     )
 }
