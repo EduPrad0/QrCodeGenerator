@@ -33,7 +33,7 @@ export default function cadastrar() {
 
 
 
-    const [cad, isCad] = useState(false);
+    const [cad, isCad] = useState(true);
     const [code, setCode] = useState('');
     let nameResponse;
 
