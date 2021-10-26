@@ -1,11 +1,4 @@
 .mainContent{
-    z-index: 9999;
-    background: url(/bkAdmin.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-
     h3{
         text-align: center;
     }
@@ -23,7 +16,7 @@
 
 
 .formContainer{
-    margin-top: 3rem;
+    margin-top: -9rem;
     padding: 1rem;
     border: 1px solid black;
     box-shadow: 10px 10px 10px 10px rgba(0,0,0, 0.9);
@@ -59,7 +52,7 @@
 
    
         button{
-            background: #F72700;
+            background: #014013;
             color: #FFFFFF;
             margin: auto;
         }

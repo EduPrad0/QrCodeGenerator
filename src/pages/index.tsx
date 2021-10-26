@@ -29,10 +29,12 @@ export default function Home() {
   return (
     <div className={styles.zi}>
     <main className={styles.mainContent}>
-      <div>
+      {/* <div>
         <h1>Bem-Vindo ao gerenciador de produtos</h1>
         <h3>By Eduardo</h3>
-      </div>
+      </div> */}
+
+    <img src="/logo.png" alt="" />
 
     <form 
       className={styles.formContainer}

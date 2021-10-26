@@ -7,11 +7,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Products {
-  id          Int     @id @default(autoincrement())
-  createdAt   String
-  name        String
-  nameProduct String
-  description String?
-  fileImg     String?
+model etiquetas {
+  id                  Int     @id @default(autoincrement())
+  createdat           String? @db.VarChar(20)
+  anofabricacao       String? @db.VarChar(10)
+  normaaplicavel      String? @db.VarChar(30)
+  cliente             String? @db.VarChar(80)
+  projeto             String? @db.VarChar(50)
+  ndefabricacao       String? @db.VarChar(20)
+  freqnominal         String? @db.VarChar(20)
+  classetensao        String? @db.VarChar(20)
+  altitude            String? @db.VarChar(20)
+  tensaoalimentacao   String? @db.VarChar(20)
+  temperaturaambiente String? @db.VarChar(20)
+  tensaocomando       String? @db.VarChar(40)
+  grauprotecao        String? @db.VarChar(40)
+  correntenominal     String? @db.VarChar(40)
+  peso                String? @db.VarChar(20)
+  simetrica           String? @db.VarChar(20)
+  nserie              String? @db.VarChar(20)
 }

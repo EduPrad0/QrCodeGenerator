@@ -1,45 +1,39 @@
-.menuNav{   
-    position: fixed;
-   
+.menuNav{
+    background-color: #909193;
 
-    > div{
+    display: flex;
+    justify-content: space-around;
+
+    button{
+        border: none;
+        background: transparent;
+        
+        img{
+            width: 120px;
+            height: 50px;
+        }
+    }
 
 
-
-       article{
-        top: 0.2rem;
-        left: 0.2rem;
-        cursor: pointer;
-
+    ul{
+        list-style: none;
         display: flex;
+        // margin-right: 30rem;
         align-items: center;
-        font-family: "Qahiri", sans-serif;
-        font-size: 2rem;
 
-        &:hover{
-            span{
-                transition: filter 0.9s;
-                filter: brightness(0);
+        
+        li {
+            cursor: pointer;
+            margin-left:2rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+
+
+            &:hover{
+                border-bottom: 3px solid green;
             }
         }
-       }
     }
-}
 
 
-.none{
-    display: none;
-}
-.sectionAparent{
-        filter: drop-shadow(40px 40px 20pxw);
-        display: block;
-        width: 100px;
-        background-color: var(--white);
-        color: black;
-        border-radius: 4px;
-
-        li{
-            cursor: pointer;
-            border-bottom: 1px inset gray;
-        }
 }

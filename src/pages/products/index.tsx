@@ -23,7 +23,7 @@ export default function products(table) {
 
 export async function getServerSideProps(){
   const prisma = new PrismaClient()
-  const table = await prisma.products.findMany()
+  const table = await prisma.etiquetas.findMany()
  
 
   

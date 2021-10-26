@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 
 
 export function CardProduct(table) {
-
+    console.log(table)
     const products = table.table
     products.reverse()
 
@@ -14,81 +14,39 @@ export function CardProduct(table) {
 
             <div>
                 <table className={styles.tableStyle}>
+                   <thead>
                     <tr>
-                        <th>Nome do Produto</th>
-                        <th>Descrição</th>
-                        <th>Nome do Autor</th>
-                        <th>ID</th>
-                        <th>Data</th>
-                        <th></th>
-                    </tr>
+                            <th>Cliente</th>
+                            <th>Nº Serie</th>
+                            <th>ID</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                   </thead>
+                   <tbody>
+
+                   
                     
                 {
                     products.map(element => {
                         return (
-                            <tr className={styles.products}>
-                                <td>{element.nameProduct}</td>
-                                <td> <p>{element.description}</p> </td>
-                                <td>{element.name}</td>
+                            <tr className={styles.products} key={element.id}>
+                                <td>{element.cliente}</td>
+                                <td>{element.nserie} </td>
                                 <td>{element.id}</td>
-                                <td>{element.createdAt}</td>
+                                <td>{element.createdat}</td>
                                 <td><button onClick={() => router.push(`/item/${element.id}`)}>Ver mais</button></td>
                             </tr>
-                            
-                            
-                            
-                            
-                            
                             
                             )
                         })
                         
                         
                     }
-            
+                    </tbody>
                 </table>
         </div>
         </section>
 
     )
 }
-
-
-// {
-//     table.map(element => {
-//         <div className={styles.container}>
-//     <article>
-//     <h4>Nome do produto:</h4>
-//     <span>{element.name}</span>
-//     </article>
-
-//     <article>
-//     <h4>Descrição</h4>
-//     <p>{element.description}</p>
-//     </article>
-
-
-//     <article>
-//         <h4>Nome do autor :</h4>
-//         <span>{element.name}</span>
-//     </article>
-
-
-//     <article>
-//         <h4>id</h4>
-//         <span>{element.id}</span>
-//     </article>
-
-//     <article>
-//         <h4>Data</h4>
-//         <span>{element.createdAt}</span>
-//     </article>
-
-//     <article>
-//         <button>Ver mais</button>
-//     </article>
-
-
-// </div>
-//     })
-// }
