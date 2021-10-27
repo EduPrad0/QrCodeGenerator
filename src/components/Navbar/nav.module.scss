@@ -1,5 +1,8 @@
 .menuNav{
     background-color: #909193;
+   @media (max-width: 768px){
+       width: 180vw;
+   }
 
     display: flex;
     justify-content: space-around;
