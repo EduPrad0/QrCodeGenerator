@@ -12,10 +12,19 @@
         margin-top: 8rem;
     }
 
+
+    @media(max-width:767px){
+        margin-left: 40%;
+        
+    }
+
 }
 
 
 .formContainer{
+    @media(max-width:767px){
+        width: 100vw;
+    }
     margin-top: -9rem;
     padding: 1rem;
     border: 1px solid black;
@@ -56,6 +65,9 @@
             color: #FFFFFF;
             margin: auto;
         }
+
+
+        
     
 }
 
